@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Horizons Kangaroo Sanctuary &amp; Camp Ground · Camping in Agnes Water, QLD</title>
+  <meta name="description" content="A small bush campground on a 10-acre kangaroo sanctuary at Agnes Water, Queensland. Powered and unpowered sites, hot showers, camp kitchen, fire pit and kangaroo feeding every afternoon. Call (07) 4974 7783 to book.">
+  <meta name="theme-color" content="#2f3f2c">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+  <meta property="og:title" content="Horizons Kangaroo Sanctuary &amp; Camp Ground">
+  <meta property="og:description" content="Camp on a 10-acre kangaroo sanctuary in the bush at Agnes Water, QLD.">
+  <meta property="og:image" content="assets/img/roos-feeding.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Reenie+Beanie&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!-- Shared SVG bits: hand-drawn "wobble" filter, the gum tree used in dividers, and the sun-on-the-horizon mark -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="1.6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <symbol id="gum" viewBox="0 0 20 34">
+      <ellipse cx="10" cy="8.5" rx="7.6" ry="6.4"/>
+      <ellipse cx="4.8" cy="13.6" rx="4.8" ry="3.5"/>
+      <ellipse cx="15.2" cy="14.2" rx="4.8" ry="3.3"/>
+      <path d="M9.1 34 C 9.6 28, 9.2 23, 9.5 14 H10.9 C 10.7 23, 11.1 28, 10.9 34 Z M9.8 22 L5 15 L6 14.4 L10.4 20.6 Z M10.3 23 L14.6 15.6 L15.6 16.2 L10.9 24.4 Z"/>
+    </symbol>
+    <symbol id="mark" viewBox="0 0 64 64">
+      <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="32" cy="32" r="29"/>
+        <path d="M11 38 H53"/>
+        <path d="M21 38 a11 11 0 0 1 22 0"/>
+        <path d="M32 15 v6 M16 22 l4.5 4.5 M48 22 l-4.5 4.5"/>
+        <path d="M18 46 C 24 42, 30 50, 37 46 S 44 44, 46 46"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Horizons Kangaroo Sanctuary and Camp Ground — home">
+      <svg class="brand-logo" aria-hidden="true"><use href="#mark"/></svg>
+      <span class="brand-name">Horizons<small>Kangaroo Sanctuary</small></span>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span class="nav-toggle-label">Menu</span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="#camp">The camp</a></li>
+        <li><a href="#stay">Sites</a></li>
+        <li><a href="#around">Around camp</a></li>
+        <li><a href="#roos">The roos</a></li>
+        <li><a href="#gallery">Photos</a></li>
+        <li><a href="#find-us">Find us</a></li>
+        <li><a class="nav-book" href="tel:+61749747783">Call to book</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="Welcome">
+  <div class="hero-media">
+    <img src="assets/img/roos-on-grass.jpg" alt="Kangaroos grazing on the grass between the gum trees at the sanctuary" width="1100" height="825" fetchpriority="high">
+  </div>
+
+  <div class="wrap hero-content">
+    <p class="hand hero-kicker">G'day, and welcome to</p>
+    <h1 class="hero-title">Horizons<br><span>Kangaroo Sanctuary</span></h1>
+    <p class="hero-sub">A small bush campground on 10 acres at Agnes Water, where the kangaroos come in for a feed every afternoon.</p>
+    <div class="hero-actions">
+      <a class="btn btn--primary" href="tel:+61749747783">Call to book: (07)&nbsp;4974&nbsp;7783</a>
+      <a class="hero-phone" href="#find-us">or see <strong>how to find us</strong></a>
+    </div>
+  </div>
+
+  <div class="hero-note hand" aria-hidden="true">
+    the locals
+    <svg class="hero-note-arrow" viewBox="0 0 120 70" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 10 C 30 6, 70 12, 92 40 C 98 48, 101 55, 103 62" />
+      <path d="M93 55 L103 63 L109 51" />
+    </svg>
+  </div>
+
+  <!-- treeline edge -->
+  <svg class="treeline" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 62 C 90 50, 170 70, 260 58 S 430 44, 520 60 S 690 74, 790 58 S 960 42, 1060 57 S 1230 72, 1320 56 S 1410 50, 1440 54 V90 H0 Z"/>
+  </svg>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about section" id="camp">
+  <div class="wrap about-grid">
+    <div class="about-text reveal">
+      <p class="label hand">our patch of Agnes Water</p>
+      <h2>Ten acres of bush, a mob of kangaroos, and room to <span class="scribble">slow down</span></h2>
+      <p class="lede">Horizons is a small campground in a bush setting on 10 acres at Agnes Water, about seven minutes' drive from town.</p>
+      <p>There are powered and unpowered sites, hot showers, a well-equipped camp kitchen and a fire pit. The views are big, the sunsets are worth being back at camp for, and there's wildlife and birdlife everywhere you look.</p>
+      <p>Wander the pathways through the gardens during the day, then come up for the kangaroo feeding, held every afternoon. It's quiet, peaceful and relaxed out here.</p>
+      <p class="signoff hand">— Denise &amp; everyone at Horizons</p>
+    </div>
+
+    <div class="about-photos">
+      <figure class="about-photo about-photo--main reveal-img">
+        <img src="assets/img/camp-kitchen.jpg" alt="The camp kitchen and deck under a big gum tree, with the bush and the horizon behind" width="1200" height="900" loading="lazy">
+      </figure>
+      <figure class="about-photo about-photo--small polaroid reveal-img">
+        <img src="assets/img/view.jpg" alt="Looking out over the treetops from camp towards the coast" width="1000" height="750" loading="lazy">
+        <figcaption class="hand">the view from camp</figcaption>
+      </figure>
+
+      <div class="signpost reveal" aria-label="Camp at a glance">
+        <span><strong>10</strong> acres</span>
+        <span><strong>7</strong> min to town</span>
+        <span><strong class="sp-word">Daily</strong> roo feed</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SITES ============ -->
+<section class="stay section" id="stay">
+  <div class="wrap">
+    <header class="section-head section-head--split reveal">
+      <div>
+        <p class="label hand">pick your spot</p>
+        <h2>Two kinds of site</h2>
+      </div>
+      <p>Tents, rooftop tents, campervans, motorhomes, off-road camper trailers and caravans up to 19 feet are all welcome. Short stays and longer ones too.</p>
+    </header>
+
+    <div class="stay-grid">
+      <article class="site-card site-card--wide reveal-img">
+        <figure class="site-card-photo">
+          <img src="assets/img/tent-site.jpg" alt="A tent and two camp chairs set up on a level site looking out over the bush to the coast" width="1400" height="1050" loading="lazy">
+        </figure>
+        <div class="site-card-body">
+          <p class="site-card-num hand">keep it simple</p>
+          <h3>Unpowered sites</h3>
+          <p>Pitch the tent or park the camper, set the chairs out and take in the view. The showers and camp kitchen are a short walk away.</p>
+        </div>
+      </article>
+
+      <article class="site-card reveal-img">
+        <figure class="site-card-photo">
+          <img src="assets/img/garden-drive.jpg" alt="The driveway curving past a stone garden bed, with the valley beyond" width="1100" height="825" loading="lazy">
+        </figure>
+        <div class="site-card-body">
+          <p class="site-card-num hand">plug in</p>
+          <h3>Powered sites</h3>
+          <p>Power for the van, camper or motorhome. Fill your water tank before you set up, as there's no water hook-up at the sites.</p>
+        </div>
+      </article>
+    </div>
+
+    <p class="stay-note reveal">
+      <svg class="doodle-arrow" viewBox="0 0 70 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 18 C 20 8, 40 26, 62 14"/><path d="M53 9 L63 14 L55 22"/></svg>
+      <span>For rates and availability, ring the office on <a href="tel:+61749747783">(07) 4974 7783</a>.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============ AROUND CAMP ============ -->
+<section class="around section" id="around">
+  <div class="wrap around-grid">
+    <div class="around-main">
+      <header class="section-head reveal">
+        <p class="label hand">what's here</p>
+        <h2>Around camp</h2>
+      </header>
+
+      <ul class="amenities">
+        <li class="reveal">
+          <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M14 10 h14 a2 2 0 0 1 2 2 v4 M30 16 c-4 0-7 2-7 5 h14 c0-3-3-5-7-5z M26 26 v3 M30 26 v5 M34 26 v3 M28 33 v3 M32 32 v3 M14 10 v30 M9 40 h12"/></svg>
+          <div><h3>Hot showers &amp; toilets</h3><p>A clean amenities block with hot showers and flushing toilets.</p></div>
+        </li>
+        <li class="reveal">
+          <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 18 h24 v10 a10 10 0 0 1-10 10 h-4 a10 10 0 0 1-10-10z M34 21 h3 a4 4 0 0 1 0 8 h-3 M8 42 h28 M17 8 c-2 3 2 4 0 7 M24 7 c-2 3 2 4 0 8"/></svg>
+          <div><h3>Camp kitchen</h3><p>Well equipped, with a stove, microwave, kettle, pots and utensils.</p></div>
+        </li>
+        <li class="reveal">
+          <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 8 c3 6 9 9 9 17 a9 9 0 0 1-18 0 c0-5 3-7 4-11 c2 3 3 5 5 5 c1-4-1-8 0-11z M10 40 L38 33 M10 33 L38 40"/></svg>
+          <div><h3>Fire pit</h3><p>One communal pit near the kitchen, with the wood supplied.</p></div>
+        </li>
+        <li class="reveal">
+          <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 31 h36 M14 31 a10 10 0 0 1 20 0 M24 11 v5 M10 17 l3.5 3.5 M38 17 l-3.5 3.5 M11 38 h26"/></svg>
+          <div><h3>Verandah &amp; deck</h3><p>A big verandah and deck with views out over the treetops. The spot for sunset.</p></div>
+        </li>
+        <li class="reveal">
+          <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 28 c-6 0-10 6-9 9 c1 3 5 2 9 2 s8 1 9-2 c1-3-3-9-9-9z M14 22 a3.5 4.5 0 1 0 0.1 0 M20 13 a3.5 4.5 0 1 0 0.1 0 M28 13 a3.5 4.5 0 1 0 0.1 0 M34 22 a3.5 4.5 0 1 0 0.1 0"/></svg>
+          <div><h3>Kangaroo feeding</h3><p>Every afternoon. Come along and meet the mob.</p></div>
+        </li>
+        <li class="reveal">
+          <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M9 31 c5-11 15-14 23-8 l8-3 l-5 7 c-1 8-10 13-19 10 c-4-1-6-3-7-6z M30 23 h.1 M19 37 v6 M25 37 v6 M9 31 l-4 2"/></svg>
+          <div><h3>Birdlife</h3><p>Peacocks, brush turkeys, kookaburras and cockatoos. Bring the binoculars.</p></div>
+        </li>
+        <li class="reveal">
+          <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 38 C 9 21, 21 10, 40 10 C 40 28, 29 40, 12 38 M10 38 L28 21 M19 29 v-7 M19 29 h7"/></svg>
+          <div><h3>Garden paths</h3><p>Pathways wind through the gardens around camp. Good for a wander.</p></div>
+        </li>
+        <li class="reveal">
+          <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 7 C 18 16, 13 22, 13 29 a11 11 0 0 0 22 0 C 35 22, 30 16, 24 7 z M19 30 a5 5 0 0 0 5 5"/></svg>
+          <div><h3>Drinking water</h3><p>Drinking water on site. Tanks are fill-only, with no hook-up at the sites.</p></div>
+        </li>
+      </ul>
+    </div>
+
+    <aside class="rules reveal" aria-labelledby="rules-title">
+      <span class="pin" aria-hidden="true"></span>
+      <h3 id="rules-title" class="hand">Good to know</h3>
+      <ul>
+        <li><strong>Bookings</strong> are by phone. Ring the office on (07) 4974 7783.</li>
+        <li><strong>No pets,</strong> sorry. This is a wildlife sanctuary.</li>
+        <li><strong>Caravans</strong> up to 19 feet. The driveway is steep, so big rigs won't make it in.</li>
+        <li><strong>Fires</strong> in the communal fire pit only.</li>
+        <li><strong>Water:</strong> fill your tank on the way in. There's no hook-up at the sites.</li>
+        <li><strong>Best for</strong> adults and teenagers. It's not really set up for young children.</li>
+      </ul>
+      <p class="rules-thanks hand">cheers, Horizons</p>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ THE ROOS ============ -->
+<section class="roos section" id="roos">
+  <div class="wrap roos-grid">
+    <figure class="roos-photo reveal-img">
+      <img src="assets/img/joey.jpg" alt="A young eastern grey kangaroo looking at the camera" width="1200" height="900" loading="lazy">
+    </figure>
+    <div class="roos-text reveal">
+      <p class="label hand">meet the mob</p>
+      <h2>A sanctuary first</h2>
+      <p>Horizons is a wildlife sanctuary as well as a campground. We're wildlife carers, and have spent many years raising orphaned and injured kangaroos and releasing them back to the bush.</p>
+      <p>The mob roams free across the property, and every afternoon they come in for a feed. Campers are welcome to come along. All camp fees go towards the work of the sanctuary.</p>
+      <dl class="hours">
+        <div><dt>Feeding time</dt><dd>Every afternoon</dd></div>
+        <div><dt>The mob</dt><dd>Eastern grey kangaroos</dd></div>
+        <div><dt>Also about</dt><dd>Whiptail &amp; swamp wallabies</dd></div>
+        <div><dt>After dark</dt><dd>Possums &amp; bandicoots</dd></div>
+      </dl>
+      <p class="roos-small">Ask at the office what time the feed is on the day you arrive.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="gallery section" id="gallery">
+  <div class="wrap">
+    <header class="section-head section-head--center reveal">
+      <p class="label hand">from the camp journal</p>
+      <h2>A few snaps</h2>
+    </header>
+
+    <div class="journal">
+      <p class="journal-note hand reveal" aria-hidden="true">
+        roos, birds &amp;<br>big skies
+        <svg viewBox="0 0 90 60" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 6 C 30 10, 60 20, 74 46"/><path d="M62 40 L75 48 L79 34"/></svg>
+      </p>
+      <figure class="snap snap--a reveal-img">
+        <button class="snap-btn" data-full="assets/img/roos-feeding.jpg" aria-label="Enlarge photo: kangaroos at feeding time">
+          <img src="assets/img/roos-feeding.jpg" alt="A mob of kangaroos gathered around the feed tubs on the sand" width="1400" height="1050" loading="lazy">
+        </button>
+        <figcaption class="hand">afternoon feed</figcaption>
+      </figure>
+      <figure class="snap snap--b reveal-img">
+        <button class="snap-btn" data-full="assets/img/deck.jpg" aria-label="Enlarge photo: the deck">
+          <img src="assets/img/deck.jpg" alt="A table and chairs on the covered timber deck, looking out to the gardens" width="1200" height="900" loading="lazy">
+        </button>
+        <figcaption class="hand">cuppa on the deck</figcaption>
+      </figure>
+      <figure class="snap snap--c reveal-img">
+        <button class="snap-btn" data-full="assets/img/sunset.jpg" aria-label="Enlarge photo: sunset from camp">
+          <img src="assets/img/sunset.jpg" alt="An orange sunset behind the silhouettes of palms and gum trees" width="900" height="1200" loading="lazy">
+        </button>
+        <figcaption class="hand">worth staying in for</figcaption>
+      </figure>
+      <figure class="snap snap--d reveal-img">
+        <button class="snap-btn" data-full="assets/img/peacock.jpg" aria-label="Enlarge photo: a peacock">
+          <img src="assets/img/peacock.jpg" alt="A peacock walking past a stone wall" width="900" height="1200" loading="lazy">
+        </button>
+        <figcaption class="hand">just passing through</figcaption>
+      </figure>
+      <figure class="snap snap--e reveal-img">
+        <button class="snap-btn" data-full="assets/img/fire-pit.jpg" aria-label="Enlarge photo: the fire pit">
+          <img src="assets/img/fire-pit.jpg" alt="Picnic tables and chairs around the stone fire pit, under the gum trees" width="1200" height="900" loading="lazy">
+        </button>
+        <figcaption class="hand">the fire pit</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPLORE / WHERE WE ARE ============ -->
+<section class="explore section" id="explore">
+  <div class="wrap explore-grid">
+    <div class="explore-map reveal" role="img" aria-label="Hand-drawn map, not to scale: Horizons Kangaroo Sanctuary just inland from Agnes Water, about seven minutes from town, with Seventeen Seventy and Eurimbula National Park to the north, Deepwater National Park to the south and the Coral Sea to the east">
+      <svg viewBox="0 0 420 500" aria-hidden="true">
+        <g class="map-rough">
+          <!-- scattered trees -->
+          <g class="map-trees">
+            <use href="#gum" x="70" y="56" width="14" height="24"/><use href="#gum" x="88" y="66" width="11" height="19"/>
+            <use href="#gum" x="134" y="50" width="12" height="20"/><use href="#gum" x="46" y="250" width="12" height="20"/>
+            <use href="#gum" x="250" y="388" width="14" height="24"/><use href="#gum" x="268" y="398" width="10" height="17"/>
+            <use href="#gum" x="150" y="352" width="11" height="19"/>
+          </g>
+          <!-- national parks -->
+          <path class="map-area" d="M36 40 C 76 26, 136 28, 170 46 C 190 64, 184 106, 152 120 C 116 130, 66 126, 42 106 C 24 88, 22 54, 36 40 z"/>
+          <path class="map-area" d="M226 362 C 256 348, 300 352, 326 372 C 344 396, 346 436, 328 456 C 300 470, 250 462, 230 440 C 212 416, 210 380, 226 362 z"/>
+          <!-- coast -->
+          <path class="map-river" d="M300 14 C 318 34, 330 48, 322 78 C 314 108, 330 150, 340 190 S 338 262, 346 318 S 362 420, 372 490"/>
+          <path class="map-river map-wave" d="M366 120 c6-5 10 5 16 0 M372 300 c6-5 10 5 16 0 M384 404 c6-5 10 5 16 0"/>
+          <!-- road in from the highway -->
+          <path class="map-road" d="M14 318 C 60 300, 110 290, 160 268 S 250 248, 306 236"/>
+          <!-- dashed trip line: camp to town -->
+          <path class="map-trip" d="M204 208 C 236 214, 268 222, 296 230"/>
+          <!-- camp -->
+          <circle class="map-camp-ring" cx="176" cy="200" r="30"/>
+          <path class="map-tent" d="M160 212 L176 186 L192 212 z M176 186 L176 212 M170 212 L176 200 L182 212"/>
+          <!-- places -->
+          <circle class="map-dot map-dot--big" cx="308" cy="234" r="8"/>
+          <circle class="map-dot" cx="304" cy="56" r="5"/>
+          <!-- compass -->
+          <g class="map-compass" transform="translate(64 430)">
+            <circle r="20"/><path d="M0 -26 L5 0 L0 26 L-5 0 z"/>
+          </g>
+        </g>
+        <text class="map-label hand-svg" x="58" y="396">N</text>
+        <text class="map-label map-label--camp hand-svg" x="40" y="166">Horizons</text>
+        <text class="map-label map-label--camp hand-svg" x="34" y="192">(that's us!)</text>
+        <text class="map-label map-label--big" x="192" y="284">Agnes Water</text>
+        <text class="map-label map-label--hand hand-svg" x="222" y="204">7 min</text>
+        <text class="map-label" x="222" y="50">Seventeen</text>
+        <text class="map-label" x="238" y="68">Seventy</text>
+        <text class="map-label map-label--sm" x="52" y="94">Eurimbula</text>
+        <text class="map-label map-label--sm" x="52" y="110">National Park</text>
+        <text class="map-label map-label--sm" x="236" y="424">Deepwater</text>
+        <text class="map-label map-label--sm" x="236" y="440">National Park</text>
+        <text class="map-label map-label--road" transform="translate(24 304) rotate(-17)">Round Hill Rd</text>
+        <text class="map-label map-label--note" x="18" y="340">to Bundaberg &amp; Gladstone</text>
+        <text class="map-label map-label--sea" transform="translate(396 250) rotate(90)">Coral Sea</text>
+        <text class="map-label map-label--note" x="110" y="490">not to scale</text>
+      </svg>
+    </div>
+
+    <div class="explore-text">
+      <header class="section-head reveal">
+        <p class="label hand">getting your bearings</p>
+        <h2>Where we are</h2>
+      </header>
+      <p class="reveal">Agnes Water is a laid-back coastal town between Bundaberg and Gladstone, at the southern end of the Great Barrier Reef. We're tucked into the bush about seven minutes' drive from the main street.</p>
+
+      <ol class="guide">
+        <li class="reveal">
+          <span class="guide-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 20 L12 5 L21 20 z M12 5 V20"/></svg>
+          </span>
+          <div><h3>Horizons</h3><p>That's us: 15 Fitzroy Crescent. Punch it into the sat nav.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="guide-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.5"/></svg></span>
+          <div><h3>Agnes Water</h3><p>Supermarkets, chemist, doctors, a tavern and plenty of cafés and restaurants.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="guide-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 9 c3-3 6 3 9 0 s6 3 9 0 M3 16 c3-3 6 3 9 0 s6 3 9 0"/></svg></span>
+          <div><h3>The beaches &amp; the reef</h3><p>Pristine beaches with turtle nesting sites, and boats out to Lady Musgrave and Lady Elliot islands.</p></div>
+        </li>
+        <li class="reveal">
+          <span class="guide-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8 C 8 4, 16 4, 20 8 C 22 14, 16 20, 12 20 C 8 20, 2 14, 4 8 z"/></svg></span>
+          <div><h3>Deepwater &amp; Eurimbula</h3><p>National parks on either side of us.</p></div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GUEST BOOK ============ -->
+<section class="guestbook section" id="reviews">
+  <div class="wrap">
+    <div class="notebook reveal">
+      <div class="notebook-page">
+        <p class="label hand">the guest book</p>
+        <h2 class="notebook-title">Don't just take our word for it</h2>
+        <p class="notebook-hand hand">More than 500 campers have left us a review on Google, and between them they've given us 4.6 out of 5.</p>
+
+        <!--
+          OPTIONAL: paste real guest quotes from Google here (with permission). Example markup:
+          <blockquote class="entry">
+            <p>“Quote copied exactly from the review.”</p>
+            <cite class="hand">— First name, month year</cite>
+          </blockquote>
+        -->
+
+        <div class="notebook-actions">
+          <a class="btn btn--ghost" href="https://search.google.com/local/reviews?placeid=ChIJa9yjZvOP6WsRZot2KUQmoy0" target="_blank" rel="noopener">Read the reviews</a>
+          <p class="notebook-ps">Stayed with us? <a href="https://search.google.com/local/writereview?placeid=ChIJa9yjZvOP6WsRZot2KUQmoy0" target="_blank" rel="noopener">We'd love it if you left one too.</a></p>
+        </div>
+      </div>
+      <svg class="notebook-doodle" viewBox="0 0 120 120" aria-hidden="true">
+        <use href="#gum" x="18" y="18" width="34" height="58"/>
+        <use href="#gum" x="44" y="6" width="42" height="72"/>
+        <use href="#gum" x="76" y="28" width="28" height="48"/>
+        <path d="M6 82 C 40 76, 80 88, 114 80" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FIND US ============ -->
+<section class="findus" id="find-us" aria-labelledby="findus-title">
+  <div class="findus-map">
+    <iframe
+      title="Map showing Horizons Kangaroo Sanctuary, 15 Fitzroy Crescent, Agnes Water QLD"
+      src="https://maps.google.com/maps?q=Horizons%20Kangaroo%20Sanctuary%20-%20Camp%20Ground%2C%2015%20Fitzroy%20Cres%2C%20Agnes%20Water%20QLD%204677&z=13&output=embed"
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p class="findus-fallback">Map not loading? <a href="https://maps.app.goo.gl/joqH3PRcARfi8PDj6" target="_blank" rel="noopener">Open it in Google Maps</a>.</p>
+  </div>
+
+  <div class="wrap findus-inner">
+    <address class="postcard-addr reveal">
+      <p class="label hand">find us</p>
+      <h2 id="findus-title">15 Fitzroy Crescent</h2>
+      <p class="addr-lines">Agnes Water QLD 4677<br>Gladstone Region, Queensland</p>
+      <a class="btn btn--primary btn--sm" href="https://www.google.com/maps/dir/?api=1&destination=Horizons+Kangaroo+Sanctuary+-+Camp+Ground%2C+15+Fitzroy+Cres%2C+Agnes+Water+QLD+4677&destination_place_id=ChIJa9yjZvOP6WsRZot2KUQmoy0" target="_blank" rel="noopener">Get directions</a>
+    </address>
+  </div>
+</section>
+
+<!-- ============ BOOK ============ -->
+<section class="book section" id="book">
+  <div class="wrap">
+    <div class="postcard reveal">
+      <figure class="postcard-front reveal-img">
+        <img src="assets/img/roos-feeding.jpg" alt="Kangaroos gathered at feeding time with the bush behind them" width="1400" height="1050" loading="lazy">
+        <figcaption class="hand">Greetings from Agnes Water</figcaption>
+      </figure>
+      <div class="postcard-back">
+        <div class="stamp" aria-hidden="true">
+          <svg><use href="#mark"/></svg>
+        </div>
+        <p class="label hand">come and stay awhile</p>
+        <h2>Meet the mob</h2>
+        <ul class="postcard-lines">
+          <li><span>Call</span><a href="tel:+61749747783">(07) 4974 7783</a></li>
+          <li><span>Find</span><a href="https://maps.app.goo.gl/joqH3PRcARfi8PDj6" target="_blank" rel="noopener">15 Fitzroy Cres, Agnes Water</a></li>
+          <li><span>Read</span><a href="https://search.google.com/local/reviews?placeid=ChIJa9yjZvOP6WsRZot2KUQmoy0" target="_blank" rel="noopener">Our Google reviews</a></li>
+        </ul>
+        <a class="btn btn--primary" href="tel:+61749747783">Ring the office to book</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <svg class="footer-trees" viewBox="0 0 1440 70" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <use href="#gum" x="40" y="20" width="30" height="50"/><use href="#gum" x="66" y="6" width="38" height="64"/><use href="#gum" x="100" y="28" width="24" height="42"/>
+    <use href="#gum" x="420" y="24" width="26" height="46"/><use href="#gum" x="444" y="12" width="34" height="58"/>
+    <use href="#gum" x="860" y="22" width="28" height="48"/><use href="#gum" x="884" y="4" width="40" height="66"/><use href="#gum" x="920" y="30" width="22" height="40"/>
+    <use href="#gum" x="1280" y="16" width="32" height="54"/><use href="#gum" x="1310" y="26" width="26" height="44"/><use href="#gum" x="1336" y="8" width="36" height="62"/>
+  </svg>
+  <div class="footer-body">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <svg role="img" aria-label="Horizons Kangaroo Sanctuary logo"><use href="#mark"/></svg>
+        <p class="hand">see you at feeding time</p>
+      </div>
+      <div>
+        <h3>Get in touch</h3>
+        <p><a href="tel:+61749747783">(07) 4974 7783</a><br>
+           Bookings by phone</p>
+        <p>15 Fitzroy Crescent<br>Agnes Water QLD 4677</p>
+      </div>
+      <div>
+        <h3>On the map</h3>
+        <p><a href="https://maps.app.goo.gl/joqH3PRcARfi8PDj6" target="_blank" rel="noopener">Google Maps</a><br>
+           <a href="https://search.google.com/local/reviews?placeid=ChIJa9yjZvOP6WsRZot2KUQmoy0" target="_blank" rel="noopener">Google reviews</a></p>
+      </div>
+      <div>
+        <h3>Nearby</h3>
+        <p>Agnes Water · Seventeen Seventy<br>Deepwater · Eurimbula</p>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <p>© <span data-year>2026</span> Horizons Kangaroo Sanctuary &amp; Camp Ground</p>
+      <a href="#top">Back to the top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<dialog class="lightbox" aria-label="Photo viewer">
+  <button class="lightbox-close" aria-label="Close photo">×</button>
+  <img src="" alt="">
+</dialog>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

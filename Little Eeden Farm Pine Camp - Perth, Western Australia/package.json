@@ -1,0 +1,16 @@
+{
+  "name": "little-eeden-pine-camp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website for Little Eeden Farm Pine Camp, Mooliabeenee WA",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "clean-css": "^5.3.3",
+    "html-minifier-terser": "^7.2.0",
+    "sharp": "^0.34.0",
+    "terser": "^5.36.0"
+  }
+}
