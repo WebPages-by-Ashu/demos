@@ -3,16 +3,11 @@ name: Deploy demos to GitHub Pages
 on:
   push:
     branches: [main]
-  # While Pages is set to "Deploy from a branch", GitHub also publishes the raw repo on every
-  # push and can overwrite this deploy. Running again after it finishes makes ours the last one.
-  # Harmless (never fires) once Settings > Pages > Source is "GitHub Actions".
-  workflow_run:
-    workflows: ["pages build and deployment"]
-    types: [completed]
   workflow_dispatch:
 
 permissions:
   contents: read
+  actions: read
   pages: write
   id-token: write
 
@@ -42,5 +37,19 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # While Settings > Pages > Source is "Deploy from a branch", GitHub also publishes the raw
+      # repo on every push. Whichever deploy lands last wins, so let that one finish first.
+      # With Source set to "GitHub Actions" there is no such run and this moves on after 30s.
+      - name: Wait for GitHub's branch-based Pages build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 60); do
+            status=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs?head_sha=$GITHUB_SHA"               --jq '[.workflow_runs[] | select(.name == "pages build and deployment")][0].status // "none"')
+            echo "attempt $i: $status"
+            if [ "$status" = "completed" ]; then break; fi
+            if [ "$status" = "none" ] && [ "$i" -ge 6 ]; then break; fi
+            sleep 5
+          done
       - id: deployment
         uses: actions/deploy-pages@v4
