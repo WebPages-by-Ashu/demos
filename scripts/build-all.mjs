@@ -44,7 +44,7 @@ for (const entry of await readdir(ROOT, { withFileTypes: true })) {
   html = html.replace(/<head>/i, '<head><meta name="robots" content="noindex, nofollow">');
   await writeFile(indexPath, html);
 
-  const title = (html.match(/<title>([^<]*)<\/title>/i)?.[1] ?? slug).split(' · ')[0].trim();
+  const title = (html.match(/<title>([^<]*)<\/title>/i)?.[1] ?? slug).split(/ [·|] /)[0].trim();
   demos.push({ slug, title, description: pkg.description ?? '' });
 }
 
