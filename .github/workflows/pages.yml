@@ -3,6 +3,12 @@ name: Deploy demos to GitHub Pages
 on:
   push:
     branches: [main]
+  # While Pages is set to "Deploy from a branch", GitHub also publishes the raw repo on every
+  # push and can overwrite this deploy. Running again after it finishes makes ours the last one.
+  # Harmless (never fires) once Settings > Pages > Source is "GitHub Actions".
+  workflow_run:
+    workflows: ["pages build and deployment"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
