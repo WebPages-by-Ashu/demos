@@ -9,6 +9,7 @@ Live at https://webpages-by-ashu.github.io/demos/
 | Little Eeden Farm Pine Camp | https://webpages-by-ashu.github.io/demos/little-eeden-pine-camp/ |
 | Horizons Kangaroo Sanctuary & Camp Ground | https://webpages-by-ashu.github.io/demos/horizons-kangaroo-sanctuary/ |
 | CC.ilash | https://webpages-by-ashu.github.io/demos/cc-ilash/ |
+| Salt and Butter Cafe | https://webpages-by-ashu.github.io/demos/salt-and-butter-cafe/ |
 
 ## Adding a new client
 
